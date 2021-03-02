@@ -3,8 +3,8 @@ public class KogumisKonto {
          private double kontoJ22k;
 
          public KogumisKonto() {
-         intressiM22r = 0.00; //intressim22r aastas
-         kontoJ22k = 0.0; //kogumiskonto esialgne j22k
+         intressiM22r = 0.00; 
+         kontoJ22k = 0.0; 
          }
 
          public KogumisKonto(double intress, double j22k) {
@@ -12,21 +12,21 @@ public class KogumisKonto {
          kontoJ22k = j22k;
          }
 
-         public void sisestaSumma(double uusJ22k) { //kogumiskontole laekuv summa
+         public void sisestaSumma(double uusJ22k) { 
          kontoJ22k = uusJ22k;
          }
 
-         public double arvutaIntressiM22r() { //arvutan aastase intressisumma
-         double intress = (kontoJ22k * intressiM22r/12); //intressim22r aastas jagatud kuude arvuga per aasta
+         public double arvutaIntressiM22r() { 
+         double intress = (kontoJ22k * intressiM22r/12); 
          kontoJ22k = kontoJ22k + intress;
          return intressiM22r;
          }
 
-         public double n2itaJ22ki() { //tagastan kogumiskonto j22gi
+         public double n2itaJ22ki() { 
          return kontoJ22k;
          }
 
-         public static void uuendaIntressiM22ra(double uusIntressiM22r) { //uuenda intressim22ra
+         public static void uuendaIntressiM22ra(double uusIntressiM22r) { 
          intressiM22r = uusIntressiM22r;
          }
 
@@ -34,14 +34,5 @@ public class KogumisKonto {
          return intressiM22r;
          }
 }
-
-
-
-
-
-
-
-
-
 
 
